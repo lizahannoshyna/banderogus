@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banderogus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- start -->
+    <section class="start">
+      <div class="container">
+        <div class="start_left-section animate__animated animate__fadeIn">
+          <img class="logo_black" src="./img/logo black.svg" alt="GoIT-logo" />
+          <div class="start_text-container">
+            <p class="text-container_submain-title">
+              Доброго вечора, ми з України !
+            </p>
+            <h1 class="text-container_header">Бандерогусь</h1>
+            <p class="text-container_main-text">
+              Спеціальний бойовий гусак із біолабораторій України. Пишаюся
+              своїми подвигами, бороню Батьківщину та підтримую позитивний дух
+              народу. Слава Україні!
+            </p>
+            <button class="text-container_btn btn">Запустити гуся</button>
+          </div>
+        </div>
+        <img class="start_gus animate__animated animate__fadeIn" src="./img/gus.svg" alt="Banderogus" />
+      </div>
+    </section>
+    <!-- facts -->
+    <section class="facts">
+      <div class="container">
+        <img src="./img/trezub.svg" alt="trezub" class="trezub" />
+        <div class="facts_text-container">
+          <h2 class="facts_title animate__animated animate__fadeIn ">Цікаві факти про бандерогусей</h2>
+          <p class="facts_main-text animate__animated animate__fadeInUp">
+            Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
+            можуть атакувати ворога системою надпотужного озброєння. Також
+            нищать психологічно, активуючи високочастотне шипіння та
+            розмахування крилами
+          </p>
+        </div>
+        <div class="facts-wrap">
+          <figure class="figure nav_wrap animate__animated animate__fadeInLeft">
+            <img class="figure__img nav_img" src="./img/gus1.svg" alt="Gus" />
+            <figcaption class="figure_figcaption">
+              <h3 class="figcaption_title nav_title">Система навігації</h3>
+              <p class="figcaption_desc nav_desc">
+                Супутниковий GPS та ехолокатори розпізнають ворожу техніку
+                навіть на етапі збірки
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="figure vision_wrap animate__animated animate__fadeInUp">
+            <img
+              class="figure__img vision_ing"
+              src="./img/gus2.svg"
+              alt="Gus"
+            />
+            <figcaption class="figure_figcaption vision_figcaption">
+              <h3 class="figcaption_title vision_title">Очі-тепловізори</h3>
+              <p class="figcaption_desc vision_desc">
+                Допомагають виявити характер сигнатури об’єктів та значно
+                підвищують точність удару
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="figure first-fact_wrap animate__animated animate__fadeInRight">
+            <img class="figure__img" src="./img/gus1.svg" alt="Gus" />
+            <figcaption class="figure_figcaption">
+              <h3 class="figcaption_title">Система навігації</h3>
+              <p class="figcaption_desc">
+                Супутниковий GPS та ехолокатори розпізнають ворожу техніку
+                навіть на етапі збірки
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- form -->
+    <section class="form">
+      <div class="container">
+        <div class="form_wrap-form animate__animated animate__fadeIn">
+          <img src="./img/trezub.svg" alt="trezub" class="trezub" />
+          <div class="wrap-form_header-wrap">
+            <h3 class="wrap-form_title">Поділися, будь ласка, поштою</h3>
+            <p class="wrap-form_desc">та запиши гуся до бандерозагону !</p>
+          </div>
+          <form class="form-container" action="#" method="post">
+            <div class="form-group">
+              <label for="name" class="name">Ім'я</label>
+              <input 
+                id="name" 
+                class="form-input" 
+                type="text" 
+                name="name" 
+                placeholder="Бандерогусь" 
+                required 
+                pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s'-]+"
+                title="Ім'я може містити лише літери, пробіли, апострофи або дефіси.">
+            </div>
+            <div class="form-group">
+              <label for="email" class="email">Email</label>
+              <input 
+                id="email" 
+                class="form-input" 
+                type="email" 
+                name="email" 
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                placeholder="banderogus@gmail.com" 
+                required>
+            </div>
+          </form>
+          <div class="btn-container">
+            <button class="wrap-form_btn btn" id="formBtn">Запустити гуся</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

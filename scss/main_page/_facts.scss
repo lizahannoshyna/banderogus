@@ -1,0 +1,60 @@
+.facts {
+  padding: 48px 0;
+  .container {
+    height: 100vh;
+    display: block;
+    position: relative;
+  }
+}
+
+.trezub {
+  margin: auto;
+  display: block;
+}
+.facts_text-container {
+  padding-top: 24px;
+  text-align: center;
+  .facts_title {
+    @include subaccent;
+  }
+  .facts_main-text {
+    width: 65%;
+    @include main;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 38px;
+  }
+}
+
+.facts-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 32px;
+    
+    .figure__img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+.figure__img{
+  transition: transform 0.3s ease;
+}
+.figure__img:hover{
+  transform: scale(1.05); 
+}
+
+
+.figure_figcaption {
+  padding-top: 8px;
+  .figcaption_title {
+    @include header;
+  }
+  .figcaption_desc {
+    @include main;
+    text-align: center;
+    padding-top: 24px;
+    max-width: 374px;
+  }
+}
