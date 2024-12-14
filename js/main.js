@@ -1,4 +1,4 @@
-document.getElementById("formBtn").addEventListener("click", function () {
+document.getElementById("launch-btn").addEventListener("click", function () {
   const emailInput = document.getElementById("email").value;
   const nameInput = document.getElementById('name').value.trim();
   
