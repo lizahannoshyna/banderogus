@@ -101,47 +101,49 @@
       </div>
     </section>
     <!-- form -->
-    <section class="form">
+    <section class="form-section">
       <div class="container">
-        <div class="form_wrap-form animate__animated animate__fadeIn">
-          <img src="./img/trezub.svg" alt="trezub" class="trezub" />
-          <div class="wrap-form_header-wrap">
-            <h3 class="wrap-form_title">Поділися, будь ласка, поштою</h3>
-            <p class="wrap-form_desc">та запиши гуся до бандерозагону !</p>
-          </div>
-          <form class="form-container" action="#" method="post" id="form">
-            <div class="form-group">
-              <label for="name" class="name">Ім'я</label>
-              <input
-                id="user-name"
-                class="form-input"
-                type="text"
-                name="name"
-                placeholder="Бандерогусь"
-                required
-                title="Ім'я може містити лише літери, пробіли, апострофи або дефіси."
-              />
-            </div>
-            <div class="form-group">
-              <label for="email" class="email">Email</label>
-              <input
-                id="user-email"
-                class="form-input"
-                type="email"
-                name="email"
-                placeholder="banderogus@gmail.com"
-                required
-              />
-            </div>
-          </form>
-          <div class="btn-container" >
-            <button type="submit" class="wrap-form_btn btn" id="launch-button" disabled="true" style="opacity: 1;" >
+       
+          <form class="form" action="#" method="post" id="form">
+            <div class="form_wrap-form animate__animated animate__fadeIn">
+              <img src="./img/trezub.svg" alt="trezub" class="trezub" />
+              <div class="wrap-form_header-wrap">
+                <h3 class="wrap-form_title">Поділися, будь ласка, поштою</h3>
+                <p class="wrap-form_desc">та запиши гуся до бандерозагону !</p>
+              </div>
+              <div class="input-container">
+                <div class="form-group">
+                  <label for="user-name" class="name">Ім'я</label>
+                  <input
+                    id="user-name"
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    placeholder="Бандерогусь"
+                    required
+                    title="Ім'я може містити лише літери, пробіли, апострофи або дефіси."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="user-email" class="email">Email</label>
+                  <input
+                    id="user-email"
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    placeholder="banderogus@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+            <button type="submit" class="form_btn btn" id="launch-btn" disabled="true" style="opacity: 1;" >
               Запустити гуся
             </button>
-          </div>
+            <img src="./img/gus-anim.gif" class="gus-anim">
+          </form> 
         </div>
       </div>
     </section>
-    <script src="./js/form.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
